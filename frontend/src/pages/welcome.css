@@ -1,0 +1,106 @@
+section{
+    margin-left: 260px;
+    margin-right: 10px;
+    padding: 20px;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.explore{
+    display: flex;
+    width:79vw;
+    height: 40vh;
+    margin-top: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-image: url(floral.jpg);
+    font-size: 36px;
+    font-family: 'Poppins',sans-serif;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text{
+    margin-top: 80px;
+    width: 60vw;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.sub-container{
+    font-family: 'Poppins',sans-serif;
+    display: grid;
+    grid-template-rows: 1fr 1fr;    
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px;
+    justify-items:center;
+    margin-top:20px;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.gbook{
+    display: flex;
+    width: 35vw;
+    height: 13vh;
+    border: 2px solid black;
+    margin-top: 25px;
+    border-radius: 10px;
+    background-image: url(freepik__expand__75859.png);
+    backdrop-filter: blur(10px);
+    background-position: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.mbook{
+    display: flex;
+    width: 35vw;
+    height: 13vh;
+    border: 2px solid rgb(0, 0, 0);
+    color: white;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    margin-top: 25px; 
+    border-radius: 10px;
+    background-image: url(2147983104.jpg);
+    backdrop-filter: blur(10px);
+    background-position: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.rbook{
+    display: flex;
+    width: 35vw;
+    height: 13vh;
+    border: 2px solid black;
+    margin-top: 25px;
+    border-radius: 10px;
+    background-image: url(2147740781.jpg);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.community{
+    display: flex;
+    width: 35vw;
+    height: 13vh;
+    border: 2px solid black;
+    margin-top: 25px;
+    border-radius: 10px;
+    background-image: url(ai-generated-8109142_640.jpg);
+    background-position: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
