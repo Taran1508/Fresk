@@ -1,0 +1,91 @@
+section{
+    margin-left: 260px;
+    margin-right: 10px;
+    padding: 20px;
+    
+}
+
+h1{
+    font-size: 45px;
+}
+#search{
+    width: 250px;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.categories{
+    width: 100%;
+    height: 50px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.category-item {
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.category-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.active {
+    font-weight: bold;
+    color: rgb(17, 0, 255); /* Change this to whatever color you prefer for the active category */
+}
+
+.cat{
+    padding:30px;
+}
+.cat > button{
+    margin-right: 10px;
+}
+
+
+.categories > div {
+    
+}
+
+.itemlist{
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    padding: 20px;
+    justify-content: flex-start;
+    gap: 80px;
+    margin: 10px;
+}
+
+
+.addItem > input,select{
+    margin: 10px;
+}
+
+#quantity{
+    width: 40px;
+}
+
+.editItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+}
+
+.editItem > button{
+    width: 80px;
+    height: 40px;
+}
+

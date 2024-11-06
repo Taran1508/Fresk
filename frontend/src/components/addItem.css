@@ -1,0 +1,51 @@
+
+.button{
+    width: 80px;
+    height: 20px;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensures the modal is on top */
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 320px;
+    max-width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001; /* Above the overlay */
+}
+
+.addItem label, .addItem input, .addItem select {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 100%;
+}
+
+.addItem button {
+    
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.addItem button:hover {
+    background-color: #0056b3;
+}

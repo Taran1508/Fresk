@@ -42,7 +42,6 @@ function Welcome() {
         }
     }, 10000); 
 
-    // Clear the interval when the component unmounts
     return () => clearInterval(intervalId);
 }, []);
 
