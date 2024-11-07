@@ -7,8 +7,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Welcome/>} />
-        <Route path="/grocery" element={<GroceryBook/>} />
+        <Route path="/Fresk/" element={<Welcome/>} />
+        <Route path="/Fresk/grocery" element={<GroceryBook/>} />
        {/* <Route path="/medicine" element={<MedicineBook />} />
         <Route path="/recipe" element={<RecipeBook />} />
         <Route path="/community" element={<Community />} /> */}

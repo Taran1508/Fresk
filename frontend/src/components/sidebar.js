@@ -7,10 +7,10 @@ function Sidebar() {
         <nav className="navbar">
         <div className="brandname"><p>Preserve</p></div>
            <ul>
-            <Link to='/' style={{ color: 'inherit', textDecoration: 'none' }}>
+            <Link to='/Fresk/' style={{ color: 'inherit', textDecoration: 'none' }}>
             <li>Home</li>
             </Link>
-            <Link to='/grocery' style={{ color: 'inherit', textDecoration: 'none' }}>
+            <Link to='/Fresk/grocery' style={{ color: 'inherit', textDecoration: 'none' }}>
             <li>Grocery Book</li>
             </Link>
             <Link to='/grocery' style={{ color: 'inherit', textDecoration: 'none' }}>
