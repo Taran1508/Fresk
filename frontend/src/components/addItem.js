@@ -1,16 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import './addItem.css';
 
-function AddItem({ onSave }){
+function AddItem({ category, onSave }){
     const [isModalOpen, setIsModalOpen] = useState(false);
     const openModal = () => setIsModalOpen(true);
     const closeModal = () => setIsModalOpen(false);
     const [itemName, setItemName] = useState('');
-    const [category, setCategory] = useState('Pantry Essentials');
+    const [selectedCategory, setSelectedCategory] = useState('');
     const [quantity, setQuantity] = useState('');
     const [weight, setWeight] = useState('Grams');
     const [purchaseDate, setPurchaseDate] = useState('');
     const [expiryDate, setExpiryDate] = useState('');
+    
+    useEffect(() => {
+        // Automatically select the item based on the category
+        setSelectedCategory(category);
+      }, [category]);
     
 
     const saveItem = () => {
@@ -19,7 +24,7 @@ function AddItem({ onSave }){
             name: itemName,
             quantity: quantity,
             weight: weight,
-            category: category,
+            category: selectedCategory,
             purchaseDate: purchaseDate,
             expiryDate: expiryDate,
         };
@@ -58,9 +63,9 @@ function AddItem({ onSave }){
                 </select>
 
                 <label htmlFor="cate">Category</label>
-                <select id="cate" value={category}
-                onChange={(e) => setCategory(e.target.value)}>
-                    <option>Pantry Essentials</option>
+                <select id="cate" value={selectedCategory}
+                onChange={(e) => setSelectedCategory(e.target.value)}>
+                    <option >Pantry Essentials</option>
                     <option>Fruits & Vegetables</option>
                     <option>Meats</option>
                     <option>Dairy, Bread & Eggs</option>

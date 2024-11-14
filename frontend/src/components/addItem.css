@@ -2,6 +2,17 @@
 .button{
     width: 80px;
     height: 20px;
+    background-color: #d6ed17;
+    color: #606060;
+    border: 2px solid #606060;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.button:hover{
+    background-color: #a8c10d;
+
 }
 
 .modal-overlay {
